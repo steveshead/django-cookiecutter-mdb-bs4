@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block splash %}
+<section class="intro view">
+    <div class="flex-center flex-column">
+        <h1 class="animated fadeIn">S2 Design - MDB BS4</h1>
+
+        <h5 class="animated fadeIn mb-1">Inspired by Genius - Driven by Passion</h5>
+
+        <p class="animated fadeIn mb-2"><em>~ Steve Shead</em></p>
+
+        <p><a class="btn btn-info" href="{% url 'account_signup' %}">Register </a>
+        <a class="btn btn-primary" href="{% url 'about' %}">More Info</a></p>
+<div class="mask pattern-5"></div>
+    </div>
+</section>
+{% endblock splash %}
+
+{% block content %}
+
+<section id="features" class="section features feature-box">
+
+    <!--Section heading-->
+    <h1 class="section-heading pt-4">The Future of Technology</h1>
+    <!--Section description-->
+    <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+    <!--Grid row-->
+    <div class="row features-small pt-3">
+
+        <!--Grid column-->
+        <div class="col-lg-5 mb-r center-on-small-only">
+            <img src="{% static 'images/ipad_pro_mockup.png' %}" alt="" class="img-fluid z-depth-0">
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7">
+
+            <!--Grid row-->
+            <div class="row pb-3">
+                <div class="col-2 col-md-1">
+                    <i class="fa fa-bank blue-text"></i>
+                </div>
+                <div class="col-10">
+                    <h5 class="feature-title">Creativity</h5>
+                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    <a class="btn btn-sm btn-outline-info" href="#">More Info</a>
+                </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row pb-3">
+                <div class="col-2 col-md-1">
+                    <i class="fa fa-code blue-text"></i>
+                </div>
+                <div class="col-10">
+                    <h5 class="feature-title">Innovation</h5>
+                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    <a class="btn btn-sm btn-outline-info" href="#">More Info</a>
+                </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row pb-3">
+                <div class="col-2 col-md-1">
+                    <i class="fa fa-money blue-text"></i>
+                </div>
+                <div class="col-10">
+                    <h5 class="feature-title">Genius</h5>
+                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    <a class="btn btn-sm btn-outline-info" href="#">More Info</a>
+                </div>
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</section>
+
+<section id="projects" class="projects section text-center">
+
+    <!--Section heading-->
+    <h1 class="section-heading pt-4">Project Gallery</h1>
+    <!--Section description-->
+    <p class="section-description lead grey-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-xl-5 mb-3">
+
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight z-depth-2">
+
+                <img src="{% static 'images/laptop-sm.jpg' %}" class="img-fluid" alt="Sample project image">
+
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+
+            <!--Excerpt-->
+            <div class="card-body">
+                <a href="" class="green-text"><h5><i class="fa fa-line-chart"></i> Lorem Ipsum</h5></a>
+                <h4>Dolor Sit Amet Laboriosam</h4>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.</p>
+                <a class="btn btn-info"> View more</a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-xl-5 mb-3">
+
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight z-depth-2">
+
+                <img src="{% static 'images/avenue.jpg' %}" class="img-fluid" alt="Sample project image">
+
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+
+            <!--Excerpt-->
+            <div class="card-body">
+                <a href="" class="blue-text"><h5><i class="fa fa-eye"></i> Lorem Ipsum</h4></a>
+                <h4>Dolor Sit Amet Laboriosam</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.</p>
+                <a class="btn btn-info"> View more</a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-xl-5 mb-3">
+
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight z-depth-2">
+
+                <img src="{% static 'images/bike.jpg' %}" class="img-fluid" alt="Sample project image">
+
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+
+            <!--Excerpt-->
+            <div class="card-body">
+                <a href="" class="brown-text"><h5><i class="fa fa-camera"></i> Lorem Ipsum</h4></a>
+                <h4>Dolor Sit Amet Laboriosam</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.</p>
+                <a class="btn btn-info"> View more</a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-xl-5 mb-3">
+
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight z-depth-2">
+
+                <img src="{% static 'images/laptop_iphone.jpg' %}" class="img-fluid" alt="Sample project image">
+
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+
+            <!--Excerpt-->
+            <div class="card-body">
+                <a href="" class="cyan-text"><h5><i class="fa fa-phone"></i> Lorem Ipsum</h5></a>
+                <h4>Dolor Sit Amet Laboriosam</h4>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.</p>
+                <a class="btn btn-info"> View more</a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</section>
+
+{% endblock %}
