@@ -2,6 +2,8 @@
 
 {% load static i18n %}
 
+{% load crispy_forms_tags %}
+
 {% block splash %}
 <section class="intro view">
     <div class="flex-center flex-column">
@@ -19,8 +21,22 @@
 {% endblock splash %}
 
 {% block content %}
+<section class="welcome">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        {% if request.user.is_authenticated %}
+          <h3>Welcome <span>{{ request.user.name }}</span> - We Are Glad You Are Here!</h3>
+        {% else %}
+        <h3>Welcome Guest - Please <a href="{% url 'account_login' %}">{% trans "Sign In" %}</a> or <a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="features" class="section features feature-box">
+  <div class="container">
 
     <!--Section heading-->
     <h1 class="section-heading pt-4">The Future of Technology</h1>
@@ -83,10 +99,11 @@
 
     </div>
     <!--Grid row-->
-
+  </div>
 </section>
 
 <section id="projects" class="projects section text-center">
+  <div class="container">
 
     <!--Section heading-->
     <h1 class="section-heading pt-4">Project Gallery</h1>
@@ -200,6 +217,61 @@
 
     </div>
     <!--Grid row-->
+  </div>
+</section>
+
+<section id="contact" class="contact">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center pb-3">Contact Us</h2>
+        <form action="{% url 'email' %}"method="post">
+          <input type='hidden' name='csrfmiddlewaretoken' value='QLWzFTfIRWNAHT2wN6Ek55xaCS7j3KiNlX0dtzjbbwvWv9J1iEs6ZaJwZVtLd3rK' />
+
+          <div id="div_id_from_email" class="form-group has-danger">
+            <label for="id_from_email" class="form-control-label  requiredField">
+                  From email<span class="asteriskField">*</span>
+            </label>
+
+            <div class="">
+              <input class="emailinput form-control form-control-danger" id="id_from_email" name="from_email" type="email" required />
+            </div>
+          </div>
+
+            <div id="div_id_subject" class="form-group has-danger">
+              <label for="id_subject" class="form-control-label  requiredField">
+                  Subject<span class="asteriskField">*</span>
+              </label>
+
+            <div class="">
+              <input class="textinput textInput form-control form-control-danger" id="id_subject" name="subject" type="text" required />
+            </div>
+            </div>
+
+            <div id="div_id_message" class="form-group has-danger">
+              <label for="id_message" class="form-control-label  requiredField">
+                  Message<span class="asteriskField">*</span>
+              </label>
+
+            <div class="">
+              <textarea class="textarea form-control form-control-danger" cols="40" id="id_message" name="message" rows="10" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-info">Send</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col">
+        <h2 class="text-center pb-3">Other Column</h2>
+      </div>
+
+    </div>
+  </div>
 
 </section>
 

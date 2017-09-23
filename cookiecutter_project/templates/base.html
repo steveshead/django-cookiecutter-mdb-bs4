@@ -79,10 +79,8 @@
 
     </div>
 
-    {% block splash %}
-{% endblock splash %}
+    {% block splash %}{% endblock splash %}
 
-    <div class="container">
 
       {% if messages %}
           {% for message in messages %}
@@ -90,11 +88,15 @@
           {% endfor %}
       {% endif %}
 
+      {% if request.get_full_path != home_url %} <div class="container">{% endif %}
+
       {% block content %}
         <p>Use this document as a way to quick start any new project.</p>
       {% endblock content %}
 
-    </div> <!-- /container -->
+      {% if request.get_full_path != home_url %} </div>{% endif %}
+
+
 
     {% block modal %}{% endblock modal %}
 
