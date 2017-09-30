@@ -56,7 +56,7 @@ LOCAL_APPS = [
     # custom users app
     'cookiecutter_project.users.apps.UsersConfig',
     # Simple contact form
-    'send_email',
+    'contact',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

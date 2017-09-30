@@ -12,6 +12,18 @@
   border-color: #eed3d7;
 }
 
+.alert-success {
+  margin-bottom: 0;
+}
+
+.profile {
+  margin-top: 20px;
+}
+
+.project-blue {
+  background: #33b5e5;
+}
+
 /* This is a fix for the bootstrap4 alpha release */
 @media (max-width: 47.9em) {
   .navbar-nav .nav-item {
@@ -37,8 +49,49 @@
   display: block !important;
 }
 
+/* form overrides */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #333;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+  }
+
+textarea {
+  height: 6rem;
+}
+
+/* css effects */
+i.fa.fa-chevron-right {
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+}
+
+i.fa.fa-chevron-right:hover {
+  transform: translate(1.5em,0);
+  -webkit-transform: translate(1.5em,0);
+  -moz-transform: translate(1.5em,0);
+  -o-transform: translate(1.5em,0);
+  -ms-transform: translate(1.5em,0);
+}
+
+/* main css */
+
 body {
   position: relative;
+}
+
+p {
+  font-weight: 300;
 }
 
 a {
@@ -113,6 +166,7 @@ a {
 section {
   padding-top: 45px;
   padding-bottom: 45px;
+  margin-bottom: 0 !important;
 }
 
 /* intro */
@@ -182,11 +236,51 @@ section.welcome {
   margin-left: 0;
 }
 
+.features-small .fa {
+  color: #33b5e5 !important;
+}
+
 /* Projects */
+section.projects {
+  background-color: rgba(51,181,229,0.1);
+}
+
 .projects .card-body h5 {
   text-transform: uppercase;
 }
 
-p {
-  font-weight: 300;
+/* galleries */
+.galleries {
+  background: rgba(146,159,186,0.2);
+  border-top: rgba(146,159,186,0.4);
+  border-bottom: rgba(146,159,186,0.4);
+}
+
+/* team */
+.team-section {
+  background: #f5f5f5;
+}
+
+
+/* contact */
+section.thank_you h1 {
+  text-transform: uppercase;
+}
+
+.gmap {
+  border: 10px solid #fff;
+  box-shadow: 0 0 1px #888;
+}
+
+.contact-map p {
+  margin-bottom: 0;
+}
+
+.btn-floating i {
+  font-size: 1.3rem;
+}
+
+/* footer */
+footer.page-footer {
+  margin-top: 80px;
 }
