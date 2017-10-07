@@ -284,3 +284,7 @@ section.thank_you h1 {
 footer.page-footer {
   margin-top: 80px;
 }
+
+footer.page-footer .title {
+    font-weight: bold;
+}
