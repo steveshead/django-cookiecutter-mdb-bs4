@@ -2,17 +2,16 @@
 
 {% load crispy_forms_tags %}
 
-{% block content %}
-<section class="section">
+{% block container %}
+<section class="contact-app">
 <div class="container form-box">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h2>Contact Details</h2>
       <p>Free free to send us a note. We will endeavor to get back to you within 24hrs. Also, we promise we will never use your email address for anything other than to chat with you, nothing more, nothing less, period, full stop - Thank You!</p>
       <iframe class="gmap" src="//www.google.com/maps/embed/v1/place?q=San%20Jose,California,%20USA&zoom=14&key=AIzaSyA7sJOlbThz4QfXqWrAvfwljKTwdu-5gfA" width="100%" height="350"></iframe>
     </div>
-    <div class="col-1"></div>
-    <div class="col-4">
+    <div class="col-md-5">
 
     <h2>{% block form_heading %}{% endblock %}</h2>
       {% block form %}
@@ -22,4 +21,4 @@
 </div>
 </section>
 
-{% endblock content %}
+{% endblock container %}

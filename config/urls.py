@@ -4,9 +4,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
-import contact.urls
+from cookiecutter_project import views
 
 urlpatterns = [
+    url(r'^$', views.contact, name='contact'),
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
 
@@ -18,7 +19,6 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # Your stuff: custom urls includes go here
-    url(r'^', include(contact.urls, namespace='contact')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

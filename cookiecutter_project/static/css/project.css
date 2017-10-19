@@ -145,6 +145,10 @@ a {
   text-transform: uppercase;
 }
 
+.navbar-simple {
+  background-color: #333 !important;
+}
+
 #sign-up-link {
   background: #33b5e5;
 }
@@ -263,8 +267,14 @@ section.projects {
 
 
 /* contact */
+section.thank_you {
+  padding-top: 8rem !important;
+  padding-bottom: 0;
+}
+
 section.thank_you h1 {
   text-transform: uppercase;
+  font-size: 4rem;
 }
 
 .gmap {

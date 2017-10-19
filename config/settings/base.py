@@ -55,8 +55,6 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # custom users app
     'cookiecutter_project.users.apps.UsersConfig',
-    # Simple contact form
-    'contact',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

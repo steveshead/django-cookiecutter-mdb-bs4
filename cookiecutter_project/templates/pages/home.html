@@ -442,34 +442,9 @@
 
       <div class="col">
         <h2 class="text-center pb-3">Send A Message</h2>
-          <!-- form placeholder while I work out how to programatically display the form -->
-          <form  method="post" action="/contact/" >
-            {% csrf_token %}
 
-            <div id="div_id_contact_name" class="form-group">
-              <label for="id_contact_name" class="form-control-label requiredField">Your name:<span class="asteriskField">*</span> </label>
-              <div class="">
-                <input class="textinput textInput form-control" id="id_contact_name" name="contact_name" placeholder="Full Name" type="text" required />
-              </div>
-            </div>
+          {% crispy form %}
 
-            <div id="div_id_contact_email" class="form-group">
-              <label for="id_contact_email" class="form-control-label requiredField">Your email:<span class="asteriskField">*</span> </label>
-              <div class="">
-                <input class="emailinput form-control" id="id_contact_email" name="contact_email" placeholder="Email Address" type="email" required />
-              </div>
-            </div>
-
-            <div id="div_id_content" class="form-group">
-              <label for="id_content" class="form-control-label requiredField">Your message:<span class="asteriskField">*</span> </label>
-              <div class="">
-                <textarea class="textarea form-control" cols="40" id="id_content" name="content" placeholder="" rows="10" required></textarea>
-              </div>
-            </div>
-
-            <input type="submit" name="sign_in" value="SUBMIT" class="btn btn-sm btn-info" id="submit-id-sign_in"/>
-          </form>
-          <!-- /end form placeholder -->
       </div>
 
       <div class="col-1"></div>
