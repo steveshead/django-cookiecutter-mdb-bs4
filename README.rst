@@ -1,7 +1,7 @@
-Cookiecutter Project
-====================
+Material Design Bootstrap 4 Cookiecutter Project
+================================================
 
-A Cookiecutter Project
+A Django Cookiecutter Project
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -20,6 +20,8 @@ Moved to settings_.
 
 Basic Commands
 --------------
+
+Follow the installation instructions here: https://cookiecutter-django.readthedocs.io/en/latest/
 
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
@@ -56,7 +58,17 @@ Moved to `Live reloading and SASS compilation`_.
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
 
+Project CSS
+^^^^^^^^^^^
 
+Use the project.css file for editing the theme, or adding to the theme.
+
+Some project notes
+^^^^^^^^^^^^^^^^^^
+
+This theme utilizes 'scrollto' and 'scrollspy' on the navigation. This means the nav scrolls smoothly to the anchor on the page, and highlights the menu item once there.
+
+This theme also has a navigation bar that changes color and shrinks on scroll.
 
 
 Sentry
